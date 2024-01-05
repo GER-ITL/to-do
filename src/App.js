@@ -1,13 +1,8 @@
-import List from "./components/List";
-import "./styles/App.scss";
+import ListTodo from './components/ListTodo/ListTodo'
+import './styles/App.scss'
 
 function App() {
-  return(
-      <>
-        <List/>
-      </>
-  )
- 
+	return <ListTodo />
 }
 
-export default App;
+export default App

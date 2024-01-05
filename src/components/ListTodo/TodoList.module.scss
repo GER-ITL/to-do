@@ -1,0 +1,64 @@
+.wrapper {
+	max-width: 800px;
+	margin: 0 auto;
+	margin-top: 100px;
+}
+@mixin todo {
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	border: 1px solid #0742e3;
+	box-shadow: 0 0 10px #0742e3;
+	border-radius: 5px;
+	text-decoration: none;
+	list-style-type: none;
+	padding: 10px;
+	margin: 5px;
+	img {
+		width: 20px;
+		cursor: pointer;
+	}
+}
+.todo {
+	@include todo();
+}
+h1 {
+	text-align: center;
+	color: #0742e3;
+}
+
+.done {
+	@include todo();
+
+	text-decoration: line-through;
+}
+.footer {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	border: 1px solid #0742e3;
+	border-radius: 5px;
+	text-decoration: none;
+	list-style-type: none;
+	padding: 10px;
+	margin: 5px;
+}
+.btnClearBlock {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.btnClear {
+	margin: 0 auto;
+	padding: 5px 20px;
+	background: transparent;
+	border: 1px solid #0742e3;
+	border-radius: 5px;
+	cursor: pointer;
+	outline: none;
+	transition: 0.5s all;
+}
+.btnClear:hover {
+	box-shadow: 0 0 10px #0742e3;
+}
